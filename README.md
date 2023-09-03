@@ -20,7 +20,7 @@ When the tool is run, you'll see a new Excel Spreadsheet in the same location as
 
 ![ExcelResults](https://github.com/lsbravo/Keyword_Replacement_ArcPro_to_Excel/assets/121823541/b6108043-fe84-45cf-a2ad-5edf2ce13995)
 
-#Before Getting Started
+# Before Getting Started
 Because the script interacts with Excel, you'll need the OPENPYXL module. If you haven't already, you can open a Jupyter Notbook and import the module before getting started.
 
 # How To Add It To A Custom Toolbox
