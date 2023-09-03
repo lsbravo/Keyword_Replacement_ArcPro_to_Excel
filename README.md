@@ -5,13 +5,13 @@ This script is for situations where you need to run multiple intersect queries o
 
 Tested in ArcGIS Pro 3.1.0.
 
-#What You Need to Get Started
+# What You Need to Get Started
 
 A Word document populated with keywords to be replaced by your intersect results. Keywords need to be unique and cannot contain spaces or semicolons. One way to guarantee no accidental replacements are made is to surround your unique keyword with <> or XXX's. See screenshot below for an example.
 A shapefile with your single point location.
 Shapefiles on the polygons to be intersected (states, regions, counties). You will also need to know how the attribute table is formatted to map the appropriate value to the keyword in Word.
 
-#How It Works
+# How It Works
 All parameters are required. Make sure the Document Filepath includes the docx extension. The LayersToCheck portion can accept several layers. These must be accompanied by the name of the attribute that will be populated in Word and the keyword that will be replaced.
 
 
@@ -21,7 +21,7 @@ When the tool is run, you'll see a new Word document in the same location as you
 #Before Getting Started
 Because the script interacts with Word Docs, you'll need the docx module. If you haven't already, you can open a Jupyter Notbook and import the module before getting started.
 
-#How To Add It To A Custom Toolbox
+# How To Add It To A Custom Toolbox
 In the Catalog panel, right click Toolboxes, add a new one, and rename it.
 
 
@@ -33,6 +33,6 @@ Once you're done with that, move to the parameters tab and set these three param
 
 Last, you'll go to the Execution tab, paste the Python script that's in this repository, and then hit OK to finish.
 
-#Other Notes
+# Other Notes
 Made with assistance from Chat GPT.
 There's a repository that has this exact same script compatible with Microsoft Word documents.
