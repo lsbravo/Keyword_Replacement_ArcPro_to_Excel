@@ -1,4 +1,4 @@
-# Keyword_Replacement_ArcPro_to_Excel
+# Keyword Replacement ArcPro to Excel
 Arcpy script for custom tool that allows mapping intersect results (Points against Polygons) to keywords in an Excel Spreadsheet.
 
 This script is for situations where you need to run multiple intersect queries on a single point to populate a report in Word. For example, if you regularly find yourself needing to fill out values like zip codes, counties, or districts on a specific location. The tool allows you to add as many layers for intersect queries as you need but will only return one result per feature class, which is why it's best for situations without overlapping polygons within the same feature class.
@@ -14,8 +14,11 @@ Tested in ArcGIS Pro 3.1.0.
 # How It Works
 All parameters are required. Make sure the Workbook Filepath includes the xlsx extension. The LayersToCheck portion can accept several layers. These must be accompanied by the name of the attribute that will be populated in Excel and the keyword that will be replaced.
 
+![Excel_Initial_Setup](https://github.com/lsbravo/Keyword_Replacement_ArcPro_to_Excel/assets/121823541/043d909b-04f0-4ac2-93bf-ded4fd53110e)
 
 When the tool is run, you'll see a new Excel Spreadsheet in the same location as your original document. It will have "UPDATE" appended to the name. Open it, and you should see the keywords now mapped to the results of the intersection queries.
+
+![ExcelResults](https://github.com/lsbravo/Keyword_Replacement_ArcPro_to_Excel/assets/121823541/b6108043-fe84-45cf-a2ad-5edf2ce13995)
 
 #Before Getting Started
 Because the script interacts with Excel, you'll need the OPENPYXL module. If you haven't already, you can open a Jupyter Notbook and import the module before getting started.
